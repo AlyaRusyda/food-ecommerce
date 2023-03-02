@@ -55,12 +55,11 @@ function Detail() {
       <div className="container lg:max-w-screen-lg mx-auto py-24 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Product's image */}
-          <div className="relative w-72 h-72 md:w-96 md:h-96 mb-40 my-auto">
+          <div className="relative">
             <img
               src={food.image}
               alt={food.name}
-              layout="fill"
-              objectFit="contain"
+              className="w-96"
             />
           </div>
 

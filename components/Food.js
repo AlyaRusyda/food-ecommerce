@@ -84,7 +84,7 @@ const Food = () => {
             <Link
               key={index}
               href={`/${item.id}`}
-              className="border-0 shadow-lg rounded-lg hover:scale-105 duration-300 p-0"
+              className="border-0 shadow-lg rounded-lg hover:scale-105 duration-300 p-0 bg-orange-100"
             >
               <img
                 src={item.image}
