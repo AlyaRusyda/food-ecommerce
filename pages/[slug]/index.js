@@ -30,13 +30,15 @@ function Detail() {
   // const toastId = useRef();
   // const firstRun = useRef(true);
 
-  const handleOnAddToCart = () => {
-    setAdding(true);
-    toastId.current = toast.loading(
-      `Adding ${qty} item${qty > 1 ? 's' : ''}...`
-    );
-    addItem(props, qty);
-  };
+  // const handleOnAddToCart = () => {
+  //   setAdding(true);
+  //   toastId.current = toast.loading(
+  //     `Adding ${qty} item${qty > 1 ? 's' : ''}...`
+  //   );
+  //   addItem(props, qty);
+  // };
+
+  const total = qty * food.price
 
   // useEffect(() => {
   //   if (firstRun.current) {
@@ -67,19 +69,19 @@ function Detail() {
           <div className="flex-1 max-w-md border border-opacity-50 rounded-md shadow-lg p-6 mt-80">
             <h2 className="text-3xl font-semibold">{food.name}</h2>
             <p>
-              <span className="text-gray-500">Availability:</span>{" "}
-              <span className="font-semibold">In stock</span>
+              <span className="text-gray-500">Stok:</span>{" "}
+              <span className="font-semibold">{food.stock}</span>
             </p>
             <p className="mt-4">{food.description}</p>
 
             {/* Price */}
             <div className="mt-8 border-t pt-4">
-              <p className="text-gray-500">Price:</p>
+              <p className="text-gray-500">Harga:</p>
               <p className="text-xl font-semibold">{food.price}</p>
             </div>
 
             <div className="mt-4 border-t pt-4">
-              <p className="text-gray-500">Quantity:</p>
+              <p className="text-gray-500">Jumlah:</p>
               <div className="mt-1 flex items-center space-x-3">
                 <button
                   onClick={() => setQty(prev => prev - 1)}
@@ -91,18 +93,20 @@ function Detail() {
                 <p className="font-semibold text-xl">{qty}</p>
                 <button
                   onClick={() => setQty(prev => prev + 1)}
-                  className="hover:bg-green-100 hover:text-green-500 rounded-md p-1 border-0"
+                  disabled={qty >= (food.stock)}
+                  className="disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-current hover:bg-green-100 hover:text-green-500 rounded-md p-1 border-0"
                 >
                   <Plus />
                 </button>
               </div>
               <button
                 type="button"
-                onClick={handleOnAddToCart}
-                disabled={adding}
-                className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                // onClick={handleOnAddToCart}
+                // disabled={adding}
+                disabled
+                className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row"
               >
-                Add to cart ({qty})
+                Masukkan keranjang (IDR {total})
               </button>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { data, kategori } from "../data/data";
+import { harga } from "@/data/data";
 
 const Food = () => {
   const [foods, setFoods] = useState(data);
@@ -13,10 +14,10 @@ const Food = () => {
     );
   };
 
-  const filterPrice = (price) => {
+  const filterPrice = (price1, price2) => {
     setFoods(
       data.filter((item) => {
-        return item.price === price;
+        return (item.price < price2) && (item.price > price1);
       })
     );
   };
@@ -48,32 +49,16 @@ const Food = () => {
         </div>
 
         <div>
-          <p className="font-bold text-gray-700">Filter Price</p>
-          <div className="flex justify-between max-w-[390px] w-full">
+          <p className="font-bold text-gray-700 md:text-end md:mr-2">Filter Price</p>
+          <div className="flex justify-between max-w-[550px] w-full">
+            {harga.map((harga) => (
             <button
-              onClick={() => filterPrice("$")}
+              onClick={() => filterPrice((harga.harga1), (harga.harga2))}
               className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
             >
-              $
+              {harga.display}
             </button>
-            <button
-              onClick={() => filterPrice("$$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              $$
-            </button>
-            <button
-              onClick={() => filterPrice("$$$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              $$$
-            </button>
-            <button
-              onClick={() => filterPrice("$$$$")}
-              className="m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white"
-            >
-              $$$$
-            </button>
+            ))}
           </div>
         </div>
       </div>
@@ -94,8 +79,8 @@ const Food = () => {
               <div className="flex justify-between px-2 py-4">
                 <p className="font-bold">{item.name}</p>
                 <p>
-                  <span className="bg-orange-500 text-white p-1 rounded-full">
-                    {item.price}
+                  <span className="bg-orange-500 text-white p-1 px-2 rounded-full">
+                    IDR{item.price}
                   </span>
                 </p>
               </div>

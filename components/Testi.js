@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./Container.js";
 
@@ -7,27 +6,27 @@ export default function Testi() {
     {
       nama: "Rainnnn",
       title: "Classmate",
-      testi1: "Share a real ",
-      mark: "testimonial",
+      testi1: "Sebagai anak kos, aku sering pakai ini. ",
+      mark: "User-friendly dan fleksibel",
       testi2:
-        "that hits some of your benefits from one of your popular customer.",
+        "menjadi salah satu alasan aku selalu menggunakannya.",
       img: "/images/rain.jpg",
     },
     {
       nama: "Risha Luffy",
       title: "Classmate",
-      testi1: "This is an ",
-      mark: "awesome",
+      testi1: "Ini adalah ecommerce website yang ",
+      mark: "keren",
       testi2:
-        " landing page template I've seen. I would use this for anything.",
-      img: "/images/logo.jpg",
+        ". Aku akan terus menggunakannya untuk memesan makanan.",
+      img: "/images/risha.jpeg",
     },
     {
       nama: "Kafanal Kafi",
       title: "Classmate",
-      testi1: "Make sure you only pick the ",
-      mark: "right sentence",
-      testi2: "to keep it short and simple.",
+      testi1: "Overall ",
+      mark: "keren",
+      testi2: ", tapi aku kurang suka dengan deskripsi yang terlalu panjang dan kurang efisien di bagian detailnya.",
       img: "/images/kafi.jpg",
     },
   ];
@@ -37,7 +36,7 @@ export default function Testi() {
       {testi.map((testi) => (
         <div className="lg:col-span-2 xl:col-auto">
               <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-                <p className="text-2xl leading-normal ">
+                <p className="text-lg leading-normal ">
                   {testi.testi1}
                   <Mark>{testi.mark}</Mark>
                   {testi.testi2}
