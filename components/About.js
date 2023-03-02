@@ -12,9 +12,6 @@ const About = () => {
             Kami adalah jasa pesan antar makanan yang berbasis di Malang, Indonesia. Kami mengedepakan kepuasaan customer dalam menikmati cita rasa makanan manca negara.  Tujuan kami adalah mengenalkan makanan-makanan manca negara agar dapat dijangkau semua orang.  
           </h4>
         </div>
-        {/* <div className="md:m-0">
-          <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" className="mt-4 md:mt-0 w-60 md:w-80" />
-        </div> */}
       </div>
       <Testi />
     </div>
