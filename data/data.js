@@ -210,6 +210,36 @@ export const data = [
       price: 22000,
       description: "Menu khas ini memiliki beberapa komposisi dari kangkung, bayam, wortel, kubis, selada, dan pare. Kemudian, sayuran-sayuran tersebut akan disajikan dengan lontong, tempe goreng, serta tahu goreng. Umumnya, seorang yang vegetarian akan menyukai makanan ini."
     },
+    {
+      id: 22,
+      name: 'Bulgogi',
+      category: 'korea',
+      stock: 17000,
+      image:
+        'https://www.selasar.com/wp-content/uploads/2020/09/Bulgogi-Makanan-Khas-Korea.jpg',
+      price: 22000,
+      description: "Dari gambarnya saja sepertinya makanan korea ini cukup menggoda lidah ya. Bahan utamanya berupa potongan daging sapi yang diiris tipis dan dibumbui sehingga menghasilkan cita rasa yang sangat lezat. Dalam proses pemasakannya, jika daging sapi sudah matang akan diberi taburan wijen di atasnya."
+    },
+    {
+      id: 23,
+      name: 'Soto',
+      category: 'indo',
+      stock: 17000,
+      image:
+        'https://www.selasar.com/wp-content/uploads/2020/08/soto-makanan-khas-indonesia-.jpg',
+      price: 22000,
+      description: "Soto adalah makanan khas Indonesia dengan kuah yang terbuat dari kaldu daging dan sayuran. Umumnya, daging untuk isian Soto ini di antaranya adalah daging ayam dan daging sapi."
+    },
+    {
+      id: 24,
+      name: 'Takoyaki',
+      category: 'jepang',
+      stock: 17000,
+      image:
+        'https://makananoleholeh.com/wp-content/uploads/2018/09/Takoyaki-Jepang.jpg',
+      price: 22000,
+      description: "Takoyaki merupakan salah satu makanan khas jepang yang sangat terkenal dan wajib dicicipi apabila anda sedang berkunjung ke jepang. Bahan dasar dari makanan ini adalah tepung terigu yang diberi isian gurita. Rasa dari makanan ini sangat lezat karena selain berisi daging gurita juga akan ada banyak isian lainnya seperti keju, cumi, udang dan yang lainnya. Anda bisa memilih takoyaki dengan isian kesukaan anda."
+    },
   ];
   
   export const kategori = [

@@ -29,7 +29,7 @@ const Food = () => {
       </h1>
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
-          <p className="font-bold text-gray-700">Filter Type</p>
+          <p className="font-bold text-gray-700">Filter Kategori</p>
           <div className="flex justfiy-between flex-wrap">
             <button
               onClick={() => setFoods(data)}
@@ -49,7 +49,7 @@ const Food = () => {
         </div>
 
         <div>
-          <p className="font-bold text-gray-700 md:text-end md:mr-2">Filter Price</p>
+          <p className="font-bold text-gray-700 md:text-end md:mr-2">Filter Harga</p>
           <div className="flex justify-between max-w-[550px] w-full">
             {harga.map((harga) => (
             <button
