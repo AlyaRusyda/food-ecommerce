@@ -5,6 +5,9 @@ import '../styles/globals.css';
 export default function App({ Component, pageProps }) {
   return (
     <>
+    <title>
+      JanCook Food
+    </title>
     <Navbar/>
     <Component {...pageProps} />
     </>
