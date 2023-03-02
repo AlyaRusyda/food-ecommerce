@@ -1,35 +1,8 @@
 import React from "react";
 import Container from "./Container.js";
+import { testi } from "@/data/data.js";
 
 export default function Testi() {
-  const testi = [
-    {
-      nama: "Rainnnn",
-      title: "Classmate",
-      testi1: "Sebagai anak kos, aku sering pakai ini. ",
-      mark: "User-friendly dan fleksibel",
-      testi2:
-        "menjadi salah satu alasan aku selalu menggunakannya.",
-      img: "/images/rain.jpg",
-    },
-    {
-      nama: "Risha Luffy",
-      title: "Classmate",
-      testi1: "Ini adalah ecommerce website yang ",
-      mark: "keren",
-      testi2:
-        ". Aku akan terus menggunakannya untuk memesan makanan.",
-      img: "/images/risha.jpeg",
-    },
-    {
-      nama: "Kafanal Kafi",
-      title: "Classmate",
-      testi1: "Overall ",
-      mark: "keren",
-      testi2: ", tapi aku kurang suka dengan deskripsi yang terlalu panjang dan kurang efisien di bagian detailnya.",
-      img: "/images/kafi.jpg",
-    },
-  ];
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">

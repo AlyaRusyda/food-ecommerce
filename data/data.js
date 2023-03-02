@@ -254,3 +254,31 @@ export const data = [
     { harga1: 20001, harga2: 30000, display: "20.000-30.000" },
     { harga1: 30001, harga2: 100000, display: "> 30.000" },
   ]
+  export const testi = [
+    {
+      nama: "Rainnnn",
+      title: "Classmate",
+      testi1: "Sebagai anak kos, aku sering pakai ini. ",
+      mark: "User-friendly dan fleksibel",
+      testi2:
+        "menjadi salah satu alasan aku selalu menggunakannya.",
+      img: "/images/rain.jpg",
+    },
+    {
+      nama: "Risha Luffy",
+      title: "Classmate",
+      testi1: "Ini adalah ecommerce website yang ",
+      mark: "keren",
+      testi2:
+        ". Aku akan terus menggunakannya untuk memesan makanan.",
+      img: "/images/risha.jpeg",
+    },
+    {
+      nama: "Kafanal Kafi",
+      title: "Classmate",
+      testi1: "Overall ",
+      mark: "keren",
+      testi2: ", tapi aku kurang suka dengan deskripsi yang terlalu panjang dan kurang efisien di bagian detailnya.",
+      img: "/images/kafi.jpg",
+    },
+  ];
