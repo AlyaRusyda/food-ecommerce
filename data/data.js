@@ -262,7 +262,7 @@ export const data = [
       mark: "User-friendly dan fleksibel",
       testi2:
         "menjadi salah satu alasan aku selalu menggunakannya.",
-      img: "/images/rain.jpg",
+      img: "/images/rain.JPG",
     },
     {
       nama: "Risha Luffy",
