@@ -3,9 +3,10 @@ import About from '@/components/About';
 import Food from '@/components/Food'
 import Headline from '@/components/Headline'
 import Hero from '@/components/Hero'
+import withNavbar from '@/components/layout/withNavbar';
 // import styles from '../styles/globals.css'
 
-export default function Home() {
+function Home() {
   return (
     <>
     <Hero />
@@ -20,3 +21,5 @@ export default function Home() {
     </>
   )
 }
+
+export default withNavbar(Home)

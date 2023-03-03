@@ -8,7 +8,6 @@ export default function App({ Component, pageProps }) {
     <title>
       JanCook Food
     </title>
-    <Navbar/>
     <Component {...pageProps} />
     </>
   )

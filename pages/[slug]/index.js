@@ -3,6 +3,9 @@ import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { Minus } from "@/components/Minus";
 import { Plus } from "@/components/Plus";
+import Navbar from "@/components/Navbar";
+import withNavbar from "@/components/layout/withNavbar";
+import NavbarDetails from "@/components/NavbarDetails";
 // import { useShoppingCart } from "@/hooks/use-shopping-cart";
 
 function getFood(id) {
@@ -54,6 +57,7 @@ function Detail() {
   // }, [cartCount]);
   return (
     <>
+    <NavbarDetails />
       <div className="container lg:max-w-screen-lg mx-auto py-24 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Product's image */}

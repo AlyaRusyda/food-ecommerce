@@ -9,8 +9,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuLinks = [
     { name: "Beranda", link: "/" },
-    { name: "Tentang Kami", link: "#about" },
-    { name: "Favorit", link: "#favorit" },
+    { name: "informasi resto", link: "/#about" },
+    { name: "Favorit anda", link: "/#favorit" },
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
