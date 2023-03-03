@@ -9,7 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menuLinks = [
     { name: "Beranda", link: "/" },
-    { name: "informasi resto", link: "/#about" },
+    { name: "testimoni", link: "/#about" },
     { name: "Favorit anda", link: "/#favorit" },
   ];
   useEffect(() => {

@@ -11,9 +11,9 @@ function Home() {
     <>
     <Hero />
     <Headline />
-    <section id='about'>
+    {/* <section id='about'> */}
       <About />
-    </section>
+    {/* </section> */}
     <section id='favorit'>
       <Food />
     </section>
