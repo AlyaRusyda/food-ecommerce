@@ -3,7 +3,7 @@ export const data = [
       id: 1,
       name: 'Sate Ayam',
       category: 'indo',
-      stock: 10,
+      stock: 20,
       image:
         'https://images.unsplash.com/photo-1529563021893-cc83c992d75d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       price: 18000,
@@ -13,7 +13,7 @@ export const data = [
       id: 2,
       name: 'Chicken Curry',
       category: 'jepang',
-      stock: 17000,
+      stock: 15,
       image:
         'https://awsimages.detik.net.id/community/media/visual/2019/01/28/1d0cc924-40e6-4ef7-911b-3114ed6df6a3.jpeg?w=700&q=90',
       price: 22000,
@@ -23,7 +23,7 @@ export const data = [
       id: 3,
       name: 'Ramen',
       category: 'jepang',
-      stock: 10,
+      stock: 19,
       image:
         'https://images.unsplash.com/photo-1584739200850-dc2072fdfe04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       price: 35000,
@@ -33,7 +33,7 @@ export const data = [
       id: 4,
       name: 'Nasi Goreng',
       category: 'indo',
-      stock: 10,
+      stock: 30,
       image:
         'https://images.unsplash.com/photo-1647093953000-9065ed6f85ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80',
       price: 9000,
@@ -43,7 +43,7 @@ export const data = [
       id: 5,
       name: 'Korean Ramyeon',
       category: 'korea',
-      stock: 10,
+      stock: 16,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Ramyeon-Makanan-Khas-Korea.jpg',
       price: 42000,
@@ -53,7 +53,7 @@ export const data = [
       id: 6,
       name: 'Bakso',
       category: 'indo',
-      stock: 10,
+      stock: 21,
       image:
         'https://th.bing.com/th/id/OIP.nvIGCSnyGhtZywZ_Ni_wBwHaEv?pid=ImgDet&rs=1',
       price: 12000,
@@ -63,7 +63,7 @@ export const data = [
       id: 7,
       name: 'Tteokbokki',
       category: 'korea',
-      stock: 10,
+      stock: 16,
       image:
         'https://images.unsplash.com/photo-1635363638580-c2809d049eee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       price: 28000,
@@ -73,7 +73,7 @@ export const data = [
       id: 8,
       name: 'Jjajangmyeon',
       category: 'korea',
-      stock: 10,
+      stock: 12,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Jjajangmyeon-Makanan-Khas-Korea.jpeg',
       price: 32000,
@@ -83,7 +83,7 @@ export const data = [
       id: 9,
       name: 'Pisang Goreng',
       category: 'indo',
-      stock: 10,
+      stock: 40,
       image:
         'https://media.istockphoto.com/id/1449091099/id/foto/sepiring-pisang-goreng-tepung-indonesia-atau-camilan-pisang-goreng-untuk-sarapan-atau.webp?s=1024x1024&w=is&k=20&c=klJNVYCHvj59BzUMMhjSUQlDJF2Jhmd2dNoHSKUFJgg=',
       price: 2000,
@@ -93,7 +93,7 @@ export const data = [
       id: 10,
       name: 'Bibimbap',
       category: 'korea',
-      stock: 10,
+      stock: 14,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Bibimbap-Makanan-Khas-Korea.jpg',
       price: 40000,
@@ -103,7 +103,7 @@ export const data = [
       id: 11,
       name: 'Sukiyaki',
       category: 'jepang',
-      stock: 10,
+      stock: 9,
       image:
         'https://images.unsplash.com/photo-1648977555545-4dd006e30d3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       price: 28000,
@@ -113,7 +113,7 @@ export const data = [
       id: 12,
       name: 'Jjamppong',
       category: 'korea',
-      stock: 10,
+      stock: 7,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Jjamppong-Makanan-Khas-Korea.jpeg',
       price: 38000,
@@ -124,17 +124,17 @@ export const data = [
       id: 13,
       name: 'Nasi Liwet',
       category: 'indo',
-      stock: 10,
+      stock: 15,
       image:
         'https://th.bing.com/th/id/OIP.-CJdqHcvvUcffc0PDy2iLAHaE6?pid=ImgDet&rs=1',
       price: 20000,
-      description: "adalah hidangan nasi khas Indonesia yang dimasak dengan santan, kaldu ayam, dan rempah-rempah Nasi kukus biasanya dimasak dalam air, tetapi nasi liwet adalah nasi yang dimasak dengan santan, kaldu ayam, daun salam dan serai, sehingga memberikan nasi rasa yang kaya, aromatik, dan gurih. Nasi liwet adalah cara memasak nasi tradisional Jawa dengan santan. Ada juga varian nasi liwet ala Sunda yang berbeda rasa dan penyajiannya."
+      description: "Nasi liwet adalah hidangan nasi khas Indonesia yang dimasak dengan santan, kaldu ayam, dan rempah-rempah Nasi kukus biasanya dimasak dalam air, tetapi nasi liwet adalah nasi yang dimasak dengan santan, kaldu ayam, daun salam dan serai, sehingga memberikan nasi rasa yang kaya, aromatik, dan gurih. Nasi liwet adalah cara memasak nasi tradisional Jawa dengan santan. Ada juga varian nasi liwet ala Sunda yang berbeda rasa dan penyajiannya."
     },
     {
       id: 14,
       name: 'Kimchi',
       category: 'korea',
-      stock: 10,
+      stock: 11,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Kimchi-Makanan-Khas-Korea.jpg',
       price: 45000,
@@ -144,7 +144,7 @@ export const data = [
       id: 15,
       name: 'Onigiri',
       category: 'jepang',
-      stock: 10,
+      stock: 30,
       image:
         'https://cdn.idntimes.com/content-images/community/2021/01/images-42-cad2b25a01dc8f98bd8ca892872337a4-095233fbd8ddcc63098a7a4f1d40bf0e_600x400.jpeg',
       price: 12000,
@@ -154,7 +154,7 @@ export const data = [
       id: 16,
       name: 'Oden',
       category: 'korea',
-      stock: 10,
+      stock: 22,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Oden-Makanan-Khas-Korea.jpg',
       price: 10000,
@@ -164,7 +164,7 @@ export const data = [
       id: 17,
       name: 'Sashimi',
       category: 'jepang',
-      stock: 10,
+      stock: 9,
       image:
         'https://cms.sehatq.com/public/img/article_img/perbedaan-sushi-dan-sashimi-apa-saja-1632371532.jpg',
       price: 43000,
@@ -174,7 +174,7 @@ export const data = [
       id: 18,
       name: 'Pempek',
       category: 'indo',
-      stock: 10,
+      stock: 17,
       image:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Pempek_Kuah_Cuko.jpg/375px-Pempek_Kuah_Cuko.jpg',
       price: 24000,
@@ -184,7 +184,7 @@ export const data = [
       id: 19,
       name: 'Udon',
       category: 'jepang',
-      stock: 10,
+      stock: 5,
       image:
         'https://asset.kompas.com/crops/Uu1b_Q-dLyJeagjsVJX6nOT65HQ=/0x0:699x466/780x390/data/photo/2020/08/23/5f41e3ce61b03.jpg',
       price: 36000,
@@ -194,7 +194,7 @@ export const data = [
       id: 20,
       name: 'Soba',
       category: 'jepang',
-      stock: 10,
+      stock: 13,
       image:
         'https://asset.kompas.com/crops/UQ4qAfHmle-adBp5P6Tme3O-Sh4=/0x0:1000x667/750x500/data/photo/2018/09/29/650777653.jpg',
       price: 23000,
@@ -214,7 +214,7 @@ export const data = [
       id: 22,
       name: 'Bulgogi',
       category: 'korea',
-      stock: 10,
+      stock: 8,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Bulgogi-Makanan-Khas-Korea.jpg',
       price: 22000,
