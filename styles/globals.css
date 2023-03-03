@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth !important;
 }
 body {
-  @apply box-border bg-white scroll-smooth;
+  @apply box-border bg-white;
 }
 @layer base {
   button {
