@@ -25,7 +25,7 @@ function Detail() {
 
   // const { cartCount, addItem } = useShoppingCart();
   const [qty, setQty] = useState(1);
-  const [adding, setAdding] = useState(false);
+  // const [adding, setAdding] = useState(false);
 
   // const toastId = useRef();
   // const firstRun = useRef(true);

@@ -204,7 +204,7 @@ export const data = [
       id: 21,
       name: 'Gado-gado',
       category: 'indo',
-      stock: 17000,
+      stock: 28,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/08/gado-gado-makanan-khas-indonesia-.jpg',
       price: 22000,
@@ -214,7 +214,7 @@ export const data = [
       id: 22,
       name: 'Bulgogi',
       category: 'korea',
-      stock: 17000,
+      stock: 10,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/09/Bulgogi-Makanan-Khas-Korea.jpg',
       price: 22000,
@@ -224,7 +224,7 @@ export const data = [
       id: 23,
       name: 'Soto',
       category: 'indo',
-      stock: 17000,
+      stock: 20,
       image:
         'https://www.selasar.com/wp-content/uploads/2020/08/soto-makanan-khas-indonesia-.jpg',
       price: 22000,
@@ -234,7 +234,7 @@ export const data = [
       id: 24,
       name: 'Takoyaki',
       category: 'jepang',
-      stock: 17000,
+      stock: 12,
       image:
         'https://makananoleholeh.com/wp-content/uploads/2018/09/Takoyaki-Jepang.jpg',
       price: 22000,
