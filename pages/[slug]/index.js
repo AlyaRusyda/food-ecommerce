@@ -3,10 +3,9 @@ import React, { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { Minus } from "@/components/Minus";
 import { Plus } from "@/components/Plus";
-import Navbar from "@/components/Navbar";
-import withNavbar from "@/components/layout/withNavbar";
 import NavbarDetails from "@/components/NavbarDetails";
 // import { useShoppingCart } from "@/hooks/use-shopping-cart";
+import Link from "next/link";
 
 function getFood(id) {
   const item = data.find((e) => e.id === Number(id));
@@ -41,7 +40,7 @@ function Detail() {
   //   addItem(props, qty);
   // };
 
-  const total = qty * food.price
+  const total = qty * food.price;
 
   // useEffect(() => {
   //   if (firstRun.current) {
@@ -57,16 +56,12 @@ function Detail() {
   // }, [cartCount]);
   return (
     <>
-    <NavbarDetails />
+      <NavbarDetails />
       <div className="container lg:max-w-screen-lg mx-auto py-24 px-6">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Product's image */}
           <div className="relative">
-            <img
-              src={food.image}
-              alt={food.name}
-              className="w-96"
-            />
+            <img src={food.image} alt={food.name} className="w-96" />
           </div>
 
           {/* Product's details */}
@@ -88,7 +83,7 @@ function Detail() {
               <p className="text-gray-500">Jumlah:</p>
               <div className="mt-1 flex items-center space-x-3">
                 <button
-                  onClick={() => setQty(prev => prev - 1)}
+                  onClick={() => setQty((prev) => prev - 1)}
                   disabled={qty <= 1}
                   className="disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-current hover:bg-rose-100 hover:text-rose-500 rounded-md p-1 border-0"
                 >
@@ -96,22 +91,30 @@ function Detail() {
                 </button>
                 <p className="font-semibold text-xl">{qty}</p>
                 <button
-                  onClick={() => setQty(prev => prev + 1)}
-                  disabled={qty >= (food.stock)}
+                  onClick={() => setQty((prev) => prev + 1)}
+                  disabled={qty >= food.stock}
                   className="disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-current hover:bg-green-100 hover:text-green-500 rounded-md p-1 border-0"
                 >
                   <Plus />
                 </button>
               </div>
-              <button
-                type="button"
-                // onClick={handleOnAddToCart}
-                // disabled={adding}
-                disabled
-                className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row"
-              >
-                Masukkan keranjang (IDR {total})
-              </button>
+              <div className="flex flex-row gap-2">
+                <button
+                  type="button"
+                  // onClick={handleOnAddToCart}
+                  // disabled={adding}
+                  // disabled
+                  className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row"
+                >
+                  Masukkan keranjang (IDR {total})
+                </button>
+                <Link
+                  href="/#favorit"
+                  className="mt-8 border rounded py-2 px-6 bg-gray-500 hover:text-gray-600 hover:bg-gray-100 border-gray-600 hover:border-gray-600 focus:ring-4 focus:ring-opacity-50 focus:ring-gray-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex flex-row"
+                >
+                  Kembali
+                </Link>
+              </div>
             </div>
           </div>
         </div>

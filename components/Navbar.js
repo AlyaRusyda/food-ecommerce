@@ -73,7 +73,7 @@ const Navbar = () => {
               : "md:hidden ml-0 text-black fixed w-full px-7 py-8 font-medium bg-white/70 top-0 duration-300"
           } ${open ? "top-0" : "top-[-100%]"}`}
         >
-          <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
+          <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg uppercase">
             {menuLinks?.map((menu, i) => (
               <li
                 onClick={() => setOpen(false)}
