@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { Minus } from "@/components/Minus";
 import { Plus } from "@/components/Plus";
 import NavbarDetails from "@/components/NavbarDetails";
-// import { useShoppingCart } from "@/hooks/use-shopping-cart";
 import Link from "next/link";
 
 function getFood(id) {
@@ -25,35 +24,9 @@ function Detail() {
     return <div>Item not found</div>;
   }
 
-  // const { cartCount, addItem } = useShoppingCart();
   const [qty, setQty] = useState(1);
-  // const [adding, setAdding] = useState(false);
-
-  // const toastId = useRef();
-  // const firstRun = useRef(true);
-
-  // const handleOnAddToCart = () => {
-  //   setAdding(true);
-  //   toastId.current = toast.loading(
-  //     `Adding ${qty} item${qty > 1 ? 's' : ''}...`
-  //   );
-  //   addItem(props, qty);
-  // };
 
   const total = qty * food.price;
-
-  // useEffect(() => {
-  //   if (firstRun.current) {
-  //     firstRun.current = false;
-  //     return;
-  //   }
-
-  //   setAdding(false);
-  //   toast.success(`${qty} ${props.name} added`, {
-  //     id: toastId.current,
-  //   });
-  //   setQty(1);
-  // }, [cartCount]);
   return (
     <>
       <NavbarDetails />
@@ -101,8 +74,6 @@ function Detail() {
               <div className="flex flex-row gap-2">
                 <button
                   type="button"
-                  // onClick={handleOnAddToCart}
-                  // disabled={adding}
                   disabled
                   className="mt-8 border rounded py-2 px-6 bg-rose-500 hover:bg-rose-600 border-rose-500 hover:border-rose-600 focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row"
                 >
