@@ -22,7 +22,7 @@ export default function Testi() {
       <div className="text-right mb-8">
         <a
           href=""
-          className="text-orange-500 text-xl hover:text-orange-700"
+          className="text-orange-500 text-xl hover:text-orange-700 hover:underline"
         >
           Lihat ulasan lainnya
         </a>
