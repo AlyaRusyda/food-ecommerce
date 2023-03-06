@@ -101,6 +101,7 @@ export const CartProvider = ({ currency = 'USD', children = null }) => {
     cartReducer,
     initialCartValues
   );
+  console.log(cart)
 
   const contextValue = useMemo(
     () => [

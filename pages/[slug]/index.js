@@ -98,7 +98,7 @@ function Detail() {
                   <Plus />
                 </button>
               </div>
-              <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex flex-row gap-2">
                 <button
                   type="button"
                   // onClick={handleOnAddToCart}
@@ -110,7 +110,7 @@ function Detail() {
                 </button>
                 <Link
                   href="/#favorit"
-                  className="md:mt-8 border rounded py-2 px-6 bg-gray-500 hover:text-gray-600 hover:bg-gray-100 border-gray-600 hover:border-gray-600 focus:ring-4 focus:ring-opacity-50 focus:ring-gray-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex flex-row"
+                  className="mt-8 border rounded py-2 px-6 bg-gray-500 hover:text-gray-600 hover:bg-gray-100 border-gray-600 hover:border-gray-600 focus:ring-4 focus:ring-opacity-50 focus:ring-gray-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex flex-row"
                 >
                   Kembali
                 </Link>
