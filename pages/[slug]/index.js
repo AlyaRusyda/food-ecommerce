@@ -1,5 +1,5 @@
 import { data } from "@/data/data";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { Minus } from "@/components/Minus";
 import { Plus } from "@/components/Plus";

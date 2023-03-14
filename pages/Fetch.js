@@ -6,12 +6,12 @@ function Blog({ posts }) {
           <div className="max-w-xs rounded-md shadow-md bg-gray-50 text-gray-800">
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
-                <h2 className="text-xl font-semibold tracking-wide">
-                {post.title}
-                </h2>
-                <p className="text-gray-800">
-                {post.id}
-                </p>
+                <div className="h-16">
+                  <h2 className="text-xl font-semibold tracking-wide mb-1">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-800">{post.id}</p>
+                </div>
               </div>
               <button
                 type="button"
