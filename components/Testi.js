@@ -1,20 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "./Container.js";
 import { testi } from "@/data/data.js";
+// import url from '../testi.json';
 
 export default function Testi() {
+  const [testimonials, setTestimonials] = useState([]);
+  const url = "https://api.jsonbin.io/v3/b/640fc5dcebd26539d08e321f";
+
+  useEffect(() => {
+    async function getTestimonials() {
+      try {
+        const data = await fetch(url);
+        const testi = await data.json();
+        console.log(testi.record.data);
+        setTestimonials(testi.record.data);
+      } catch(error) {
+        console.log(error);
+      }
+    }
+    getTestimonials()
+  }, []);
+
   return (
     <Container>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3 mt-8 mb-4">
-        {testi.map((testi) => (
-          <div className="lg:col-span-2 xl:col-auto">
+        {testi.map((testimonial, index) => (
+          <div className="lg:col-span-2 xl:col-auto" key={index}>
             <div className="flex flex-col justify-between w-full h-full bg-gray-100 p-14 rounded-2xl dark:bg-trueGray-800">
               <p className="text-lg leading-normal ">
-                {testi.testi1}
-                <Mark>{testi.mark}</Mark>
-                {testi.testi2}
+                {testimonial.testi1}
+                <Mark>{testimonial.mark}</Mark>
+                {testimonial.testi2}
               </p>
-              <Avatar image={testi.img} name={testi.nama} title={testi.title} />
+              <Avatar image={testimonial.img} name={testimonial.nama} title={testimonial.title} />
             </div>
           </div>
         ))}

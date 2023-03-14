@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
 
-
 const NavbarDetails = () => {
   const [sticky, setSticky] = useState(false);
   useEffect(() => {

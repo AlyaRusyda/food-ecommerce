@@ -11,6 +11,7 @@ const Navbar = () => {
     { name: "Beranda", link: "/" },
     { name: "testimoni", link: "/#about" },
     { name: "Favorit anda", link: "/#favorit" },
+    { name: "Fetch", link: "/Fetch" }
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -78,7 +79,7 @@ const Navbar = () => {
               <li
                 onClick={() => setOpen(false)}
                 key={i}
-                className="px-6 hover:text-gray-400"
+                className="px-6 hover:text-orange-500"
               >
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
